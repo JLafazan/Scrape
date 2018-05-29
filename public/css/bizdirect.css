@@ -1,0 +1,424 @@
+.subnav-hero-section {
+  text-align: center;
+  /*background-image: url(images/oliver-thomas-klein-161835.jpg);
+  */
+  background-size: cover;
+  position: relative;
+  overflow: visible;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 300px;
+}
+
+#logout {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #fefefe;
+  font-family: "nanum myeongjo", serif;
+  font-size: 15px;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 20px;
+}
+
+.subnav-hero-section .subnav-hero-headline a {
+  color: #fefefe;
+  font-family: "Nanum Myeongjo", serif;
+  font-size: 60px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.subnav-hero-subnav {
+  float: none;
+  position: absolute;
+  text-align: center;
+  margin: 0 auto;
+  bottom: 0;
+  width: 100%;
+  font-family: "nanum myeongjo", serif;
+}
+
+.subnav-hero-subnav li {
+  float: none;
+  display: inline-block;
+}
+
+.subnav-hero-headline {
+  font-color: #fefefe;
+}
+
+.subnav-hero-subnav li a {
+  padding: 0.9rem 1rem;
+  font-size: 0.75rem;
+  color: #fefefe;
+  text-transform: uppercase;
+  display: block;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: all 0.35s ease-in-out;
+}
+
+.subnav-hero-subnav li a.is-active {
+  background: rgba(254, 254, 254, 0.15);
+}
+
+.subnav-hero-subnav li a:hover {
+  background: rgba(254, 254, 254, 0.15);
+}
+
+footer {
+  background-color: #FAAF2A;
+  background-size: cover;
+  background-position: center bottom;
+  margin-top: 40px;
+  width: 100%;
+  height: 100px;
+  clear: both;
+}
+
+#rumi {
+  font-family: "Nanum Myeongjo", serif;
+  text-align: center;
+  padding: 35px;
+  font-size: 20px;
+  color: #fefefe;
+  font-style: italic;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.new {
+  margin-top: 20px;
+}
+
+.callout.text-center {
+  background-color: #fff;
+}
+
+/* FAVORITES */
+
+.favorites-h1 {
+  font-family: 'Permanent Marker', cursive;
+}
+
+.card-text {
+  font-size: 20px;
+}
+
+/* INDEX PAGE */
+
+.header-h1 {
+  font-family: 'Permanent Marker', cursive;
+}
+
+h2 {
+  font-family: 'Permanent Marker', cursive;
+}
+
+h3 {
+  font-family: 'Domine', serif;
+  text-align: center;
+}
+
+.index-h2 {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.index-a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.index-a:hover {
+  text-decoration: none;
+  color: #1a0e05;
+}
+
+#sign-up-box {
+  margin: 20px 0;
+}
+
+#events-grid {
+  width: 100%;
+  display: inline-block;
+  margin: 20px 0;
+}
+
+#main-events {
+  margin: 20px 0;
+  flex:
+}
+
+.NewStory {
+  background-color: #FAAF2A;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.card {
+  width: 45%;
+  display: inline-flex;
+  margin: 10px;
+}
+
+.card-title {
+  text-align: center;
+}
+
+.card-text {
+  text-align: center;
+}
+
+h5 {
+  text-align: center;
+  font-family: 'Permanent Marker', cursive;
+}
+
+.events-h5 {
+  font-family: 'Permanent Marker', cursive;
+}
+
+.events-h6 {
+  text-align: center;
+  font-family: 'Domine', serif;
+}
+
+/* .side-by-side {
+  display: flex;
+  flex-wrap: wrap;
+} */
+
+.card-img-top {
+  width: 100% !important;
+}
+
+/* CREATE EVENTS PAGE */
+
+.cms-h5 {
+  margin: 20px 0;
+  font-family: 'Domine', serif;
+}
+
+#cms-submit {
+  float: left;
+  background-color: #2C3E50;
+  border: none;
+}
+
+.form-group {
+  font-family: 'Permanent Marker', cursive;
+}
+
+.form-control {
+  font-family: 'Domine', serif;
+}
+
+/* ALL EVENTS PAGE */
+
+.events-create-a:hover {
+  text-decoration: none;
+  color: navy;
+}
+
+.events-a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.events-a:hover {
+  text-decoration: none;
+  color: navy;
+}
+
+.events-h5 {
+  margin: 20px 0;
+}
+
+.event-info {
+  margin: 0 10px;
+}
+
+.add-fav-btn {
+  border: none;
+  background-color: #6bc1d3;
+  width: 100%;
+  color: #fff;
+  letter-spacing: 0.025em;
+}
+
+#events-biz-container {
+  margin: 0 0 20px 0;
+}
+
+/*  */
+
+/* ALL EVENTS AND LOCAL ORGANIZATIONS (GRID) PAGES */
+
+.active {
+  color: #fff;
+  background-color: #2C3E50;
+  border-radius: 0.25rem;
+}
+
+.bizdirect-body {
+	width: 80%;
+	margin: 20px auto 0 auto;
+}
+
+.bizdirect-nav {
+	margin-bottom: 20px;
+}
+
+img {
+	width: 100%;
+}
+
+.gallery-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* INDIVIDUAL ORG PAGES */
+
+.org-h3 {
+  font-family: 'Permanent Marker', cursive;
+}
+
+.org-h5 {
+  font-family: 'Permanent Marker', cursive;
+}
+
+.org-p {
+  font-family: 'Domine', serif;
+}
+
+/* Create four equal columns that sits next to each other */
+.gallery-column {
+  flex: 1 0 auto;
+  max-width: 50%;
+  padding: 0 4px;
+}
+
+.gallery-column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+.biz-container {
+    position: relative;
+    width: 100%;
+}
+
+.org {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.biz-middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.biz-container:hover .org {
+  opacity: 0.7;
+}
+
+.biz-container:hover .biz-middle {
+  opacity: 1;
+}
+
+.biz-text {
+  color: #000;
+  font-size: 16px;
+}
+
+.org-info {
+	width: 100%;
+	margin-top: 20px;
+}
+
+.biz-photo {
+	margin: 0 auto;
+}
+
+.biz-cat-h4 {
+	display: inline;
+	margin: 0 20px;
+}
+
+.biz-categories {
+	margin: 0 auto;
+	padding-top: 20px;
+}
+
+.hideOrg {
+  /*width: 0px;*/
+  /*display: none;*/
+  opacity: 0.3;
+  transition: 0.5s;
+}
+
+/*.hideOrg h5 {
+  display: none;
+}
+*/
+.showOrg {
+  width: 100%;
+  opacity: 1;
+  /*display: inline;*/
+  /*display: none;*/
+  transition: 0.5s;
+}
+
+/*.showOrg h5 {
+  display: inline-block;
+  text-align: center;
+}*/
+
+.showOrgFD {
+  opacity: 1;
+}
+
+.showOrgAE {
+  opacity: 1;
+}
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .gallery-column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .gallery-column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
