@@ -54,7 +54,10 @@ $(document).on("click", "p", function() {
       $("#notes").append("<textarea id='bodyinput' name='body'></textarea>");
       // A button to submit a new note, with the id of the article saved to it
       $("#notes").append("<button data-id='" + data._id + "' id='savenote' class='btn btn-success'>Save Note</button>");
-      $("#notes").append("<button data-id='" + data._id + "' id='favorite' class='btn btn-danger'>Make Favorite</button>");
+      
+
+      // $("#notes").append("<button data-id='" + data._id + "' id='favorite' class='btn btn-danger'>Make Favorite</button>");
+      
       // If there's a note in the article
       if (data.note) {
         // Place the title of the note in the title input
@@ -95,24 +98,24 @@ $(document).on("click", "#savenote", function() {
 });
 
 
-// When you click the savenote button
-$(document).on("click", "#favorite", function() {
-  // Grab the id associated with the article from the submit button
-  var thisId = $(this).attr("data-id");
+// When you click the favorite button
+// $(document).on("click", "#favorite", function() {
+//   // Grab the id associated with the article from the submit button
+//   var thisId = $(this).attr("data-id");
 
-  // Run a POST request to change the note, using what's entered in the inputs
-  $.ajax({
-    method: "POST",
-    url: "/favorites/" + thisId,
-    data: {
-      // Value taken from title input
-      title: $("#titleinput").val(),
-      // Value taken from note textarea
-      body: $("#bodyinput").val()
-    }
-  })
+//   // Run a POST request to change the note, using what's entered in the inputs
+//   $.ajax({
+//     method: "POST",
+//     url: "/favorites/" + thisId,
+//     data: {
+//       // Value taken from title input
+//       title: $("#titleinput").val(),
+//       // Value taken from note textarea
+//       body: $("#bodyinput").val()
+//     }
+//   })
  
-});
+// });
 
 
 

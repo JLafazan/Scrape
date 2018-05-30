@@ -34,12 +34,12 @@ mongoose.connect("mongodb://localhost/wsjScrapper");
 // A GET route for scraping the echoJS website
 app.get("/scrape", function(req, res) {
   // First, we grab the body of the html with request
-  axios.get("http://www.nytimes.com/").then(function(response) {
+  axios.get("http://www.sacbee.com/news/").then(function(response) {
     // Then, we load that into cheerio and save it to $ for a shorthand selector
     var $ = cheerio.load(response.data);
 
     // Now, we grab every h2 within an article tag, and do the following:
-    $("h2.story-heading").each(function(i, element) {
+    $("h4.title").each(function(i, element) {
       // Save an empty result object
       var result = {};
 
@@ -101,6 +101,8 @@ app.get("/articles/:id", function(req, res) {
   db.Article.findOne({ "_id": req.params.id })
   // ..and populate all of the notes associated with it
   .populate("note")
+  .populate("favorite")
+  
   // now, execute our query
   .exec(function(error, doc) {
     // Log any errors
@@ -125,8 +127,11 @@ app.post("/articles/:id", function(req, res) {
 
 // Create a new note and pass the req.body to the entry
   var newNote = new db.Note(req.body);
+  
 
-  var newFavorite = new db.Favorite(req.body);
+ // var newFavorite = new db.Favorite(req.body);
+  // var newFavorite = new db.Favorite(req.body);
+ 
 
   // And save the new note the db
   newNote.save(function(error, doc) {
@@ -154,6 +159,36 @@ app.post("/articles/:id", function(req, res) {
       });
     }
   })
+
+
+ // And save the new favorite the db
+  // newFavorite.save(function(error, doc) {
+  //   // Log any errors
+  //   if (error) {
+  //     console.log(error);
+  //   }
+  //   // Otherwise
+  //   else {
+  //     // Use the article id to find and update it's note
+  //     db.Article.findOneAndUpdate({ "_id": req.params.id }, { "favorite": doc._id })
+  //     // Execute the above query
+  //     .exec(function(err, doc) {
+  //       console.log("req: ",doc);
+  //       // Log any errors
+  //       if (err) {
+  //         console.log(err);
+  //       }
+  //       else {
+  //         // Or send the document to the browser
+  //         console.log("docidin:",doc._id);
+  //         // req.note.push(doc._id);
+  //         res.send(doc);
+  //       }
+  //     });
+  //   }
+  // })
+
+
 
 });
 
