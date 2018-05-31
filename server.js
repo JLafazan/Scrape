@@ -58,11 +58,11 @@ db.once("open", function() {
 
 
 
-@app.route('/scrape', methods = ['GET', 'POST'])
+app.route('/scrape', methods = ['GET', 'POST'])
 
-@app.route('/articles', methods = ['GET', 'POST'])
+app.route('/articles', methods = ['GET', 'POST'])
 
-@app.route('/articles/:id', methods = ['GET', 'POST'])
+app.route('/articles/:id', methods = ['GET', 'POST'])
 
 
 // Routes
