@@ -27,42 +27,42 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 // Connect to the Mongo DB
-// mongoose.connect("mongodb://localhost/beeScrapper");
+mongoose.connect("mongodb://localhost/beeScrapper");
 
 
 
 
 // Database configuration with mongoose
-if(process.env.MONGODB_URI) {
-  mongoose.connect(process.env.MONGODB_URI);
+// if(process.env.MONGODB_URI) {
+//   mongoose.connect(process.env.MONGODB_URI);
 
-// Connect to the Mongo DB
+// // Connect to the Mongo DB
 
-  mongoose.Promise = Promise;
+//   mongoose.Promise = Promise;
 
 
-} else {
-  mongoose.connect("mongodb://localhost/beeScrapper");
-}
-var db = mongoose.connection;
+// } else {
+//   mongoose.connect("mongodb://localhost/beeScrapper");
+// }
+// var db = mongoose.connection;
 
 // Show any mongoose errors
-db.on("error", function(error) {
-  console.log("Mongoose Error: ", error);
-});
+// db.on("error", function(error) {
+//   console.log("Mongoose Error: ", error);
+// });
 
-// Once logged in to the db through mongoose, log a success message
-db.once("open", function() {
-  console.log("Mongoose connection successful.");
-});
+// // Once logged in to the db through mongoose, log a success message
+// db.once("open", function() {
+//   console.log("Mongoose connection successful.");
+// });
 
 
 
-app.route('/scrape', methods = ['GET', 'POST'])
+// app.route('/scrape', methods = ['GET', 'POST'])
 
-app.route('/articles', methods = ['GET', 'POST'])
+// app.route('/articles', methods = ['GET', 'POST'])
 
-app.route('/articles/:id', methods = ['GET', 'POST'])
+// app.route('/articles/:id', methods = ['GET', 'POST'])
 
 
 // Routes
